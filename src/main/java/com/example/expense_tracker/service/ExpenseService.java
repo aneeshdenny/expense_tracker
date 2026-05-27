@@ -45,7 +45,7 @@ public class ExpenseService {
         existingExpense.setCategory(updatedExpense.getCategory());
         existingExpense.setDate(updatedExpense.getDate());
 
-        return repository.save(updatedExpense);
+        return repository.save(existingExpense);
     }
 
     public void deleteExpense(Long id) {
